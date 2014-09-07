@@ -1,0 +1,18 @@
+
+SET(DOC_FILES
+    src/index.rst
+    src/scales.rst
+)
+
+SET(SPHINX_OPTIONS
+)
+
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/html
+    COMMAND sphinx-build -b html ${SPHINX_OPTIONS}
+        ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}/html
+    DEPENDS ${DOC_FILES}
+)
+
+
+INSTALL(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/html DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/build)
