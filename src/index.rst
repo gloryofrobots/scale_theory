@@ -11,6 +11,7 @@ Guitar fusion theory handbook
    :maxdepth: 2
 
    scales
+   chords
 
 
 .. Indices and tables
