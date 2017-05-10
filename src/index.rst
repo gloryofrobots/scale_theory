@@ -5,10 +5,8 @@
 Contents
 ========
 
-Guitar fusion theory handbook
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    scales
    chords
